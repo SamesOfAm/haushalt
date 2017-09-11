@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Haushalt</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/week.css">
+
+    
+</head>
+<body>
+    <div class="header">
+        <h3>Haushalt</h3>
+    </div>
+    <div class="menu">
+        <form id="user-input">
+            <input required id="item" name="item" type="text" placeholder="Position">
+            <input required id="amount" name="amount" type="text" placeholder="Betrag">
+            <input type="submit" class="button" value=">">
+        </form>
+        <form class="preset-items">
+            <a href="#" onclick="addTrainMorning" type="submit" class="button">Zug Morgens</a>
+            <a href="#" onclick="addTrainLate" type="submit" class="button">Zug Tag</a>
+        </form>
+    </div>
+    <div class="table-container">
+        <table>
+            <tbody id="table">
+                <tr>
+                    <th>Montag</th>
+                    <th></th>
+                    <th>Dienstag</th>
+                    <th></th>
+                    <th>Mittwoch</th>
+                    <th></th>
+                    <th>Donnerstag</th>
+                    <th></th>
+                    <th>Freitag</th>
+                    <th></th>
+                    <th>Samstag</th>
+                    <th></th>
+                    <th>Sonntag</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td id="item-mon-1">Zug</td>
+                    <td id="amount-mon-1">15</td>
+                    <td id="item-tue-1">Lebensm...</td>
+                    <td id="amount-tue-1">8</td>
+                    <td id="item-wed-1"></td>
+                    <td id="amount-wed-1"></td>
+                    <td id="item-thu-1"></td>
+                    <td id="amount-thu-1"></td>
+                    <td id="item-fri-1"></td>
+                    <td id="amount-fri-1"></td>
+                    <td id="item-sat-1"></td>
+                    <td id="amount-sat-1"></td>
+                    <td id="item-sun-1"></td>
+                    <td id="amount-sun-1"></td>
+                </tr>
+                <tr>
+                    <td id="item-mon-2">Essen</td>
+                    <td id="amount-mon-2">39</td>
+                    <td id="item-tue-2">Mittag</td>
+                    <td id="amount-tue-2">5</td>
+                    <td id="item-wed-2"></td>
+                    <td id="amount-wed-2"></td>
+                    <td id="item-thu-2"></td>
+                    <td id="amount-thu-2"></td>
+                    <td id="item-fri-2"></td>
+                    <td id="amount-fri-2"></td>
+                    <td id="item-sat-2"></td>
+                    <td id="amount-sat-2"></td>
+                    <td id="item-sun-2"></td>
+                    <td id="amount-sun-2"></td>
+                </tr>
+                <tr>
+                    <td id="item-mon-3">Trinken</td>
+                    <td id="amount-mon-2">20</td>
+                    <td id="item-tue-3"></td>
+                    <td id="amount-tue-3"></td>
+                    <td id="item-wed-3"></td>
+                    <td id="amount-wed-3"></td>
+                    <td id="item-thu-3"></td>
+                    <td id="amount-thu-3"></td>
+                    <td id="item-fri-3"></td>
+                    <td id="amount-fri-3"></td>
+                    <td id="item-sat-3"></td>
+                    <td id="amount-sat-3"></td>
+                    <td id="item-sun-3"></td>
+                    <td id="amount-sun-3"></td>
+                </tr>
+                <tr>
+                    <td id="item-mon-4"></td>
+                    <td id="amount-mon-2"></td>
+                    <td id="item-tue-4"></td>
+                    <td id="amount-tue-4"></td>
+                    <td id="item-wed-4"></td>
+                    <td id="amount-wed-4"></td>
+                    <td id="item-thu-4"></td>
+                    <td id="amount-thu-4"></td>
+                    <td id="item-fri-4"></td>
+                    <td id="amount-fri-4"></td>
+                    <td id="item-sat-4"></td>
+                    <td id="amount-sat-4"></td>
+                    <td id="item-sun-4"></td>
+                    <td id="amount-sun-4"></td>
+                </tr>
+                <tr>
+                    <td id="item-mon-5"></td>
+                    <td id="amount-mon-2"></td>
+                    <td id="item-tue-5"></td>
+                    <td id="amount-tue-5"></td>
+                    <td id="item-wed-5"></td>
+                    <td id="amount-wed-5"></td>
+                    <td id="item-thu-5"></td>
+                    <td id="amount-thu-5"></td>
+                    <td id="item-fri-5"></td>
+                    <td id="amount-fri-5"></td>
+                    <td id="item-sat-5"></td>
+                    <td id="amount-sat-5"></td>
+                    <td id="item-sun-5"></td>
+                    <td id="amount-sun-5"></td>
+                </tr>
+                <tr>
+                    <td id="item-mon-sum"></td>
+                    <td id="amount-mon-sum"></td>
+                    <td id="item-tue-sum"></td>
+                    <td id="amount-tue-sum"></td>
+                    <td id="item-wed-sum"></td>
+                    <td id="amount-wed-sum"></td>
+                    <td id="item-thu-sum"></td>
+                    <td id="amount-thu-sum"></td>
+                    <td id="item-fri-sum"></td>
+                    <td id="amount-fri-sum"></td>
+                    <td id="item-sat-sum"></td>
+                    <td id="amount-sat-sum"></td>
+                    <td id="item-sun-sum"></td>
+                    <td id="amount-sun-sum"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="test"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

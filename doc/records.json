@@ -1,0 +1,22 @@
+{
+    "records": [
+        {
+            "amount": 15,
+            "date": "1.9. Fr",
+            "dayClass": "17-9-1",
+            "item": "Zug"
+        },
+        { 
+            "amount": 5, 
+            "date": "1.9. Fr",
+            "dayClass": "17-9-1",
+            "item": "Mittagessen"
+        },
+        {
+            "amount": 3,
+            "date": "2.9. Sa",
+            "dayClass": "17-9-2",
+            "item": "Frühstück"
+        }
+    ]
+}
