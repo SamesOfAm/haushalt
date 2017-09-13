@@ -10,21 +10,23 @@
 </head>
 <body>
     <?php 
+    $host_name = 'db698740020.db.1and1.com';
+    $database = 'db698740020';
+    $user_name = 'dbo698740020';
+    $password = 'Cientosiete107,';
 
-	$con = mysql_connect("localhost", "root", "Cientosiete107,") or die ("Failed");
-	$db = mysql_select_db('my_database') or die ("No database");
-	
-	if($con) {
-		echo 'Successfully connected to the database';
-	} else {
-		die('Error');
-	}
-
-	if ($db) {
-		echo '  Successfully found the database';
-	} else {
-		die('Database not found');
-	}
+    $connect = mysql_connect($host_name, $user_name, $password, $database);
+    if (mysql_errno()) {
+        die('<p>Verbindung zum MySQL Server fehlgeschlagen: '.mysql_error().'</p>');
+    }
+	// $con = mysql_connect("localhost", "root", "Cientosiete107,") or die ("Failed");
+	// $db = mysql_select_db('haushalt') or die ("No database");
+    $query = mysql_query("SELECT * FROM florian");
+    $rows = array();
+    while ($row = mysql_fetch_assoc($query)) {
+        $rows[] = $row;
+    }
+    $length = count($rows);
     ?>
     <div class="header">
         <h3>Haushalt</h3>
@@ -36,8 +38,8 @@
             <input type="submit" class="button" value=">">
         </form>
         <form class="preset-items">
-            <a href="#" onclick="addTrainMorning" type="submit" class="button">Zug Morgens</a>
-            <a href="#" onclick="addTrainLate" type="submit" class="button">Zug Tag</a>
+            <!-- <a href="#" onclick="addTrainMorning" type="submit" class="button">Zug Morgens</a>
+            <a href="#" onclick="addTrainLate" type="submit" class="button">Zug Tag</a> -->
         </form>
     </div>
     <div class="table-container">
@@ -52,7 +54,16 @@
         </table>
     </div>
     <div id="test"></div>
-    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script type="text/javascript">
+        var records = 
+            <?php
+                echo '[';
+                for ($i = 0; $i < $length; $i++) {
+                    echo json_encode($rows[$i]) . ', ';
+                }
+                echo ']';
+            ?>;
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
