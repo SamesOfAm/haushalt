@@ -1,0 +1,249 @@
+.content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header a {
+    padding-left: 1px;
+}
+
+.logout-button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 2.5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.box {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.form {
+    display: none;
+}
+
+.active > a {
+    border-bottom: 2px solid black;
+}
+
+.index-select a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 49%;
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.index-form {
+    width: 100%;
+}
+
+.index-form input[type="submit"] {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: whitesmoke;
+}   
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#menu {
+    width: 100%;
+    text-align: center;
+}
+#user-input form {
+    float: left;
+}
+
+#user-input {
+    margin-bottom: 20px;
+}
+
+.button, .radio {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #ccc;
+    color: black;
+}
+
+input[type='submit']{
+    cursor: pointer;
+}
+
+input[type='submit']:hover, #menu a:hover{
+    background: #bbb;
+}
+
+.time-select {
+    width: 800px;
+    clear: both;
+    text-align: center;
+}
+
+.time-select form {
+    display: inline;
+}
+
+.filter {
+    float: left;
+    font-weight: bold;
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.filter span {
+    float: left;
+    padding: 10px;
+}
+
+.filter form select {
+    padding: 10px;
+}
+
+#table-container {
+}
+
+#table-container .table {
+    width: 100%;
+}
+
+#table-container td, #table-container th {
+    text-align: left;
+    width: 50px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#table-container th {
+    font-size: 15px;
+}
+
+#table-container td:first-child, #table-container th:first-child {
+    width: 100px;
+}
+
+#table-container td:nth-child(2), #table-container th:nth-child(2) {
+    width: 500px;
+}
+
+.sum > td:nth-child(2) {
+    font-weight: 700;
+}
+
+.sum > td:last-child {
+    font-weight: 700;
+    text-align: right;
+}
+
+#user-input input[type="text"], #user-input input[type="number"], #user-input select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 120px;
+}
+
+#menu input[type="text"] {
+    width: 110px;
+}
+
+#amount {
+    width: 48px;
+}
+
+.type-selection {
+    margin-bottom: 10px;
+}
+
+.type-selection input {
+    margin-bottom: 15px;
+}
+
+#active { 
+    outline: none;
+    border-radius: 7px;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.sum-box {
+    border: 2px solid;
+    border-radius: 3px;
+    box-shadow: 0 0 1px;
+    padding: 15px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 2em;
+    text-align: left;
+}
+
+.sum-box input[type="number"] {
+    font-weight: bold;
+    font-family: "Merriweather Sans";
+    text-align: right;
+    font-size: 14px;
+    border: none;
+    padding: 0;
+    width: 60px;  
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+.sum-box td:first-child {
+    width: 
+    text-align: left;
+}
+
+.sum-box td:last-child {
+    text-align: right;
+}
+
+#budget {
+    width: 94px;
+}
+
+.active {
+    display: table-row !important;
+}
+
+#showed-month {
+    cursor: default;
+    color: black;
+    border: none;
+    font-size: 14px;
+    font-family: 'Merriweather sans', 'sans-serif';
+    width: 80px;
+    text-align: center;
+}
